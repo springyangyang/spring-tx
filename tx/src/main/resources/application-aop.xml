@@ -17,7 +17,6 @@
 		<property name="dataSource" ref="dataSource"/>
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager"/>	
-	
 	<!-- 3、利用切面编程来实现对某一类方法进行事务统一管理(声明式事务) -->
 	<!-- 属于AOP中的东西，比较熟悉了的 -->
 	 <!-- <aop:config> 
