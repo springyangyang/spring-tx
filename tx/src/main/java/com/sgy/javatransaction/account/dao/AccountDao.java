@@ -15,7 +15,6 @@ public class AccountDao {
 	}
 	//查询余额
 	public Double selectAccount(final String name){
-		
 		String sql = "select money from t_account where name = /?";
 		Double money = template.queryForObject(sql, new Object[]{name}, Double.class);
 		return money;
