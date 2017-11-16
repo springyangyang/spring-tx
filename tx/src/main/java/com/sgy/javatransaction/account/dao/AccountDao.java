@@ -24,7 +24,6 @@ public class AccountDao {
 		String sql = "update t_account set money = money-? where name = ? and money >=?";
 		int count = template.update(sql, money,out,money);
 		return count;
-		
 	}
 	//转出
 	public int updateIn(final String in ,final Double money){
